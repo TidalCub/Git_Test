@@ -1,10 +1,11 @@
-from flask import Flask
+from re import DEBUG
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return("Hell world")
+    return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

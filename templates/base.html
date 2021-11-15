@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang=en> 
+<head>
+    <title>Tidal Tec</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">
+    <div id="Header">
+        <div id="Headimg">
+            <img src="../static/img/logo.png" alt="Tidal Tec" height="80%" width="Auto">
+        </div>
+    </div>
+    {% block head %} {% endblock%}
+</head>
+<body>
+    {% block body %}{% endblock %}
+</body>
+<footer>
+    {% block footer %}{% endblock %}
+</footer>
+</html>
