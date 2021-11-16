@@ -87,6 +87,9 @@ a:hover {
     height: 100%;
     font-size: 150%;
 }
+#clickaway{
+    height: 60%;
+}
 #Showcaseimg{
     height:50%;
     min-height:500px;

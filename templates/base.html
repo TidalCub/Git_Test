@@ -24,11 +24,12 @@
 <body>
     <div id="mobileLinks" class="mobile" >
         <div id="Links">
-            <a href="#">Home</a><br>
+            <a href="/">Home</a><br>
             <a href="#">Expiriance</a><br>
             <a href="#">Services</a><br>
             <a href="#">Contact Us</a><br>
         </div>
+        <div id="clickaway" onclick="myFunction()"></div>
     </div>
     {% block body %}{% endblock %}
     <script>
@@ -40,6 +41,7 @@
     x.style.display = "none";
   }
 }
+
     </script>
 </body>
 <footer>
