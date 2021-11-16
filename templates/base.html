@@ -9,11 +9,38 @@
         <div id="Headimg">
             <img src="../static/logo.png" alt="Tidal Tec" height="80%" width="Auto">
         </div>
+        <div id ="nav">
+            <a href="#">Home</a>
+            <a href="#">Expiriance</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+            <div class="mobile">
+                <button id="Ham" onclick="myFunction()">&#9776;</button>
+            </div>
+        </div>
     </div>
     {% block head %} {% endblock%}
 </head>
 <body>
+    <div id="mobileLinks" class="mobile" >
+        <div id="Links">
+            <a href="#">Home</a><br>
+            <a href="#">Expiriance</a><br>
+            <a href="#">Services</a><br>
+            <a href="#">Contact Us</a><br>
+        </div>
+    </div>
     {% block body %}{% endblock %}
+    <script>
+        function myFunction() {
+  var x = document.getElementById("mobileLinks");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+    </script>
 </body>
 <footer>
     {% block footer %}{% endblock %}
