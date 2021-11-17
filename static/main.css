@@ -22,7 +22,7 @@ a:hover {
     border: none;
     color:#0168a3;
     font-weight: bolder;
-    z-index: 2;
+    z-index: 1;
 }
 #Header{
     width: 100%;
