@@ -13,6 +13,17 @@ a {
 a:hover {
     color: #0168a3;
 }
+.LinkButton{
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #121212;
+    border: none;
+    color:#0168a3;
+    font-weight: bolder;
+    z-index: 2;
+}
 #Header{
     width: 100%;
     position:relative;
@@ -129,27 +140,20 @@ a:hover {
 #ImgHeadLine #Text{
     display: block;
     padding:13px;
-    padding-left: 30px;
+    padding-left: 40px;
     padding-right: 20px;
-    font-size:3vw ;
+    font-size:30px ;
 }
 #ImgButton{
     width: auto;
     height: auto;
-    font-size: 1.5vw;
+    font-size: 25px;
     position:relative;
     top: 35%;
-    padding-left:20px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
     display: table;
     margin: 0 auto;
-    background-color: #121212;
-    border: none;
-    color:#0168a3;
-    font-weight: bolder;
 }
+
 .Widigt{
     width:auto;
     height: auto;
@@ -159,6 +163,12 @@ a:hover {
     background-color: #1c1c1c;
     width:1000px;
     color:white
+}
+.Widigt .LinkButton{
+    position: relative;
+    display: table;
+    margin-left: auto;
+    margin-right: 0;
 }
 .WidigtLeft{
     width:40%;
@@ -178,13 +188,22 @@ a:hover {
     height: 100%;
     
 }
+.WidigtAll{
+    width:90%;
+    padding:10px;
+    display: table;
+    margin: 0 auto;
+}
+.WidigtAll h1{
+    text-align: center;
+}
 .WidigtText{
     padding-left: 10px;
 }
 .WidigtText h1{
     font-size: 3vw;
 }
-
+/* Mobile Screens */
 @media only screen and (max-width: 800px) {
     #nav a{
         display: none;
@@ -195,11 +214,18 @@ a:hover {
     #Showcaseimg{
         height: 40%;
         min-height: 50px;}
+    #ImgLeft{
+        width:100%
+    }
     #ImgHeadLine #Text{
-        font-size:4vw ;
+        font-size:25px ;
+        text-align: center;
+        padding:0;
+        padding-top:13px;
+        padding-bottom: 13px;
     }
     #ImgButton{
-        font-size: 3.5vw;
+        font-size: 18px;
         padding:5px;
     }
     .Widigt{
@@ -213,28 +239,41 @@ a:hover {
         width: 100%;
     }
     .WidigtText h1{
-        font-size: 4vw;
+        font-size: 20px;
     }
     .WidigtText p{
-        font-size: 3vw;
+        font-size: 15px;
+    }
+    .WidigtAll{
+        width: 90%;
     }
 }
+/* Larger Monitors */
 @media only screen and (min-width: 1500px) {
     #ImgHeadLine #Text{
-        font-size:2vw ;
+        font-size:50px ;
+        text-align: center;
     }
     #ImgButton{
-        font-size: 1.5vw;
+        font-size: 30PX;
         
     }
     #ImgLeft{
         width:30%;
     }
     .WidigtText h1{
-        font-size: 2vw;
+        font-size: 40PX;
     }
     .WidigtText p{
-        font-size: 1vw;
+        font-size: 20PX;
+    }
+}
+/* Wide Screen Monitor */
+@media only screen and (min-width: 2000px){
+    #ImgLeft{
+        width:auto;
+        display: table;
+        margin: 0 auto;
     }
 }
     
