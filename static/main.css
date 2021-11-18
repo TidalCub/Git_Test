@@ -203,6 +203,49 @@ a:hover {
 .WidigtText h1{
     font-size: 3vw;
 }
+.HeaderText{
+    width: auto;
+    height:auto;
+    padding:20px 0 20px 20px;
+    color:white;
+    font-size:50px;
+    
+}
+#Services{
+    width: 100%;
+    padding:10px 0 10px 0;
+}
+#ServicesPad {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px 20px;
+    justify-content: center;
+}
+.Products{
+    background-color: #1c1c1c;
+    color:white;
+    padding:10px 10px 10px 10px;
+    width: 250px;
+    float: left;
+    height: 400px;
+    
+    
+}
+.ProductImg{
+    width: 90%;
+    height:80%;
+    display: table;
+    margin:0 auto;
+}
+.ProductHeader{
+    display: table;
+    margin:0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
 /* Mobile Screens */
 @media only screen and (max-width: 800px) {
     #nav a{
@@ -247,6 +290,13 @@ a:hover {
     .WidigtAll{
         width: 90%;
     }
+    
+    .HeaderText{
+        font-size: 20px;
+        display: table;
+        text-align: center;
+    }
+   
 }
 /* Larger Monitors */
 @media only screen and (min-width: 1500px) {
@@ -274,6 +324,15 @@ a:hover {
         width:auto;
         display: table;
         margin: 0 auto;
+    }
+    .HeaderText{
+        display:table;
+        margin: 0 auto;
+        
+    }
+    #ServicesPad{
+        width:60%;
+        margin:0 auto;
     }
 }
     
