@@ -25,7 +25,7 @@ def ServicesFunc():
 
 @app.route("/Services/<products>")
 def ServicesProducts(products):
-    return redirect('/Services')
+    return render_template('ProductPage.html')
 
 @app.route("/Contact_Us")
 def Contact_Us():
