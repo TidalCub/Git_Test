@@ -15,8 +15,12 @@ Services = Table(
     'Services', meta,
         Column('ID', Integer, primary_key = True),
         Column('Name', String),
-        Column('img_URL',String),
-        Column('Desc',String),
+        Column('Img_Preview',String),
+        Column('Img_Main',String),
+        Column('Short_Desc',String),
+        Column('Long_Desc',String),
+        Column('ContactUs?',Boolean),
+        Column('Price?',Boolean),
 )
 meta.create_all(engine)
 print(session.query(Services).all())

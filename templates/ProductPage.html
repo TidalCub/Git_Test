@@ -4,5 +4,28 @@
 {% endblock %} 
 
 {% block body %}
+<div id="ProductInfoBreif">
+     <div id="ProductImg">
+        <img href="{{Img}}">
+    </div>
+    <div id="HeadDescWrap">
+        <div id="ProductHeader">
+            {{Title}}
+        </div>
+        <div id="ShortDesc">
+            {{ShortDesc}}
+        </div>
+    </div>
+    <div id="BuyPannel">
+        {% if Price %}
+        Dummy Text
+        {%else%}
+        <a href="/Contac_tUs" class="LinkButton">Get a Quote</a>
+        {%endif%}
+    </div>
+</div>
+<div id="LongDesc">
+    {{LongDesc}}
+</div>
 
 {% endblock %}

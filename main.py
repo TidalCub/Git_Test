@@ -25,7 +25,26 @@ def ServicesFunc():
 
 @app.route("/Services/<products>")
 def ServicesProducts(products):
-    return render_template('ProductPage.html')
+    products = products.replace('%20','')
+    ServicesInfo = session.query(Services).filter_by(Name = products).all()
+    print(ServicesInfo)
+    Img = ServicesInfo[0][3]
+    Title = ServicesInfo[0][1]
+    ShortDesc = ServicesInfo[0][4]
+    LongDesc = ServicesInfo[0][5]
+    if ServicesInfo[0][6]:
+        Contact = True
+    else:
+        Contact = False
+    if ServicesInfo[0][7]:
+        Price = True
+    else:
+        Price = False
+    if ServicesInfo[0][8]:
+        TFImg = True
+    else:
+        TFImg = False
+    return render_template('ProductPage.html',info = ServicesInfo, Img = Img, Title = Title, ShortDesc = ShortDesc, LongDesc = LongDesc, Contact = Contact, Price = Price,TFImg = TFImg)
 
 @app.route("/Contact_Us")
 def Contact_Us():

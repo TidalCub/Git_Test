@@ -233,17 +233,40 @@ a:hover {
     
     
 }
-.ProductImg{
+.ProductImgPre{
     width: 90%;
     height:80%;
     display: table;
     margin:0 auto;
 }
-.ProductHeader{
+.ProductHeaderPre{
     display: table;
     margin:0 auto;
     text-align: center;
     font-size: 20px;
+}
+#ProductInfoBreif{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#ProductImg{
+    float:left;
+    width:30%;
+    height:auto
+    
+}
+#HeadDescWrap{
+    float: left;
+    width:500px
+}
+#BuyPannel{
+    
+    width:200px;
+    background-color: #1c1c1c;
+    display: table;
+    right:0;
 }
 
 /* Mobile Screens */
